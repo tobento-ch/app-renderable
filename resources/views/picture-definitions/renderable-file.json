@@ -1,0 +1,23 @@
+{
+    "img": {
+        "src": {
+            "width": 300
+        },
+        "attributes": {
+            "loading": "lazy"
+        }
+    },
+    "sources": [
+        {
+            "srcset": [
+                {
+                    "width": 300,
+                    "descriptor": null
+                }
+            ],
+            "attributes": {
+                "type": "image/webp"
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "tobento/app-renderable",
+    "version": "2.0",
+    "type": "library",
+    "description": "Renderable support for the app, wiring the renderable factory with media, html sanitizing and locales.",
+    "keywords": [
+        "tobento",
+        "package",
+        "app",
+        "renderable",
+        "view"
+    ],
+    "homepage": "https://www.tobento.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Strub",
+            "email": "info@tobento.ch",
+            "homepage": "https://www.tobento.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "tobento/app": "^2.0",
+        "tobento/app-file-storage": "^2.0",
+        "tobento/app-html-sanitizer": "^2.0",
+        "tobento/app-http": "^2.0",
+        "tobento/app-language": "^2.0",
+        "tobento/app-media": "^2.0",
+        "tobento/app-migration": "^2.0",
+        "tobento/app-view": "^2.0",
+        "tobento/service-renderable": "^2.0"
+    },  
+    "require-dev": {
+        "phpunit/phpunit": "^12.3",
+        "vimeo/psalm": "^6.13",
+        "tobento/app-testing": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobento\\App\\Renderable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tobento\\App\\Renderable\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "psalm": "vendor/bin/psalm"
+    }
+}
